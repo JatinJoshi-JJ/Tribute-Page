@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A futuristic, responsive tribute to Elon Musk: Entrepreneur, Engineer, and Innovator leading SpaceX, Tesla, Neuralink, and X."
+    />
+    <title>Elon Musk | Visionary & Pioneer</title>
+
+    <!-- Google Fonts: Orbitron for Sci-Fi Headings & Plus Jakarta Sans for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       PURE CSS THEME TOGGLE (Hidden Checkbox Architecture)
+       Checked = Dark Mode (Default) | Unchecked = Light Mode
+       ============================================================ -->
+    <input
+      type="checkbox"
+      id="theme-toggle"
+      class="theme-toggle-checkbox"
+      checked
+      hidden
+    />
+
+    <div class="page-wrapper">
+      <!-- Ambient Glowing Orbs / Aurora Glow Ball Effects -->
+      <div class="glow-orb orb-1" aria-hidden="true"></div>
+      <div class="glow-orb orb-2" aria-hidden="true"></div>
+      <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+      <!-- ============================================================
+         RESPONSIVE NAVIGATION BAR
+         ============================================================ -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <div class="container nav-inner">
+          <!-- Brand Logo -->
+          <a href="#hero" class="nav-brand">
+            <span class="brand-glow-dot"></span>
+            ELON MUSK
+          </a>
+
+          <!-- Pure CSS Hamburger Toggle Checkbox -->
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle-checkbox"
+            hidden
+          />
+
+          <!-- Navigation Links Menu -->
+          <ul class="nav-menu">
+            <li><a href="#biography" class="nav-link">Bio</a></li>
+            <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#companies" class="nav-link">Ventures</a></li>
+            <li><a href="#quotes" class="nav-link">Quotes</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          </ul>
+
+          <!-- Right Action Cluster: Theme Toggle Switch + Mobile Hamburger -->
+          <div class="nav-actions">
+            <!-- Theme Toggle Switch (Pure HTML/CSS) -->
+            <label
+              for="theme-toggle"
+              class="theme-switch"
+              title="Toggle Light / Dark Mode"
+              aria-label="Toggle Theme"
+            >
+              <span class="switch-icon sun-icon">☀️</span>
+              <span class="switch-ball"></span>
+              <span class="switch-icon moon-icon">🌙</span>
+            </label>
+
+            <!-- Animated Hamburger / Cross (X) Button (Visible on Mobile) -->
+            <label
+              for="menu-toggle"
+              class="hamburger-btn"
+              aria-label="Toggle Navigation Menu"
+            >
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bot"></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- ============================================================
+           1. HERO SECTION
+           ============================================================ -->
+        <header class="hero-section" id="hero">
+          <div class="container hero-content">
+            <div class="hero-badge-wrap">
+              <span class="hero-badge">VISIONARY • ENGINEER • PIONEER</span>
+            </div>
+
+            <h1 class="hero-title">Elon Musk</h1>
+            <p class="hero-tagline">Entrepreneur • Engineer • Innovator</p>
+
+            <!-- Avatar with Orbiting Glow Rings -->
+            <figure class="hero-figure">
+              <div class="avatar-ring-outer">
+                <div class="avatar-ring-inner">
+                  <img
+                    src="/assets/images/elon_musk.jpg"
+                    alt="Portrait of Elon Musk"
+                    class="hero-image"
+                    width="280"
+                    height="280"
+                  />
+                </div>
+              </div>
+              <figcaption class="hero-caption">
+                Advancing humanity through multiplanetary exploration and
+                sustainable energy.
+              </figcaption>
+            </figure>
+
+            <p class="hero-intro">
+              From pioneering internet commerce and reusable aerospace
+              engineering to driving the electric vehicle revolution and
+              brain-computer interfaces, Elon Musk's ventures consistently
+              challenge fundamental technological boundaries.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#biography" class="btn btn-primary"
+                >Explore His Journey</a
+              >
+              <a href="#timeline" class="btn btn-secondary">View Milestones</a>
+            </div>
+          </div>
+        </header>
+
+        <!-- ============================================================
+           2. BIOGRAPHY SECTION
+           ============================================================ -->
+        <section class="section bio-section" id="biography">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">ORIGIN & FOUNDATIONS</span>
+              <h2 class="section-title">The Journey</h2>
+            </div>
+
+            <div class="bio-grid">
+              <article class="glass-card bio-card">
+                <div class="card-badge">1971 — 1994</div>
+                <h3 class="bio-card-title">Early Life & Education</h3>
+                <p>
+                  Born on June 28, 1971, in Pretoria, South Africa, Elon Reeve
+                  Musk exhibited an early fascination with computing and
+                  science. At age 12, he coded and sold the space-themed video
+                  game <em>Blastar</em> for approximately $500.
+                </p>
+                <p>
+                  He later emigrated to Canada to attend Queen's University,
+                  subsequently transferring to the
+                  <strong>University of Pennsylvania</strong>, earning dual
+                  degrees in Physics and Economics.
+                </p>
+              </article>
+
+              <article class="glass-card bio-card">
+                <div class="card-badge">1995 — 2002</div>
+                <h3 class="bio-card-title">Digital Frontier & PayPal</h3>
+                <p>
+                  In 1995, Musk co-founded <strong>Zip2</strong>, an early
+                  online city guide with interactive vector maps, acquired by
+                  Compaq in 1999 for $307 million.
+                </p>
+                <p>
+                  He immediately channeled his proceeds into founding
+                  <strong>X.com</strong>, an online financial services company
+                  that merged to become <strong>PayPal</strong>, acquired by
+                  eBay in 2002 for $1.5 billion.
+                </p>
+              </article>
+
+              <article class="glass-card bio-card">
+                <div class="card-badge">2002 — 2012</div>
+                <h3 class="bio-card-title">SpaceX & Electric Revolution</h3>
+                <p>
+                  Motivated by the belief that humanity must become a
+                  multiplanetary species to ensure survival, Musk founded
+                  <strong>SpaceX</strong> in 2002 to radically decrease space
+                  transportation costs.
+                </p>
+                <p>
+                  In 2004, he led Tesla's Series A financing round, becoming
+                  chairman and product architect before stepping in as CEO in
+                  2008 to steer mass electric vehicle production.
+                </p>
+              </article>
+
+              <article class="glass-card bio-card">
+                <div class="card-badge">2016 — PRESENT</div>
+                <h3 class="bio-card-title">
+                  AI, Connectivity & Neural Systems
+                </h3>
+                <p>
+                  Musk broadened his vision to address civilizational
+                  bottlenecks: global satellite internet via
+                  <strong>Starlink</strong>, brain-computer interfaces with
+                  <strong>Neuralink</strong>, urban tunneling via
+                  <strong>The Boring Company</strong>, and frontier AI research
+                  with <strong>xAI</strong>.
+                </p>
+                <p>
+                  His engineering philosophy is rooted in
+                  <em>first-principles physics</em>—breaking problems down to
+                  fundamental truths rather than reasoning by analogy.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           3. TIMELINE SECTION
+           ============================================================ -->
+        <section class="section timeline-section" id="timeline">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">CHRONOLOGY</span>
+              <h2 class="section-title">Major Milestones</h2>
+            </div>
+
+            <div class="timeline-wrapper">
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">1971</span>
+                  <h3 class="timeline-heading">Birth in Pretoria</h3>
+                  <p>
+                    Born on June 28 in South Africa; developed self-taught
+                    programming and software skills.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item right">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">1995</span>
+                  <h3 class="timeline-heading">Zip2 Founded</h3>
+                  <p>
+                    Created digital media city guide Zip2, sold to Compaq for
+                    over $300M, launching his tech career.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">1999</span>
+                  <h3 class="timeline-heading">X.com & PayPal Merger</h3>
+                  <p>
+                    Pioneered online payments with X.com, which merged into
+                    PayPal and sold to eBay for $1.5B.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item right">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2002</span>
+                  <h3 class="timeline-heading">SpaceX Established</h3>
+                  <p>
+                    Founded Space Exploration Technologies Corp. with the core
+                    objective of developing reusable rockets.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2004</span>
+                  <h3 class="timeline-heading">Joined Tesla Motors</h3>
+                  <p>
+                    Led Tesla’s Series A funding round, driving architecture and
+                    vehicle product strategy.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item right">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2008</span>
+                  <h3 class="timeline-heading">Falcon 1 & Tesla CEO</h3>
+                  <p>
+                    Falcon 1 achieved orbit as the first privately funded
+                    liquid-fuel rocket; became Tesla CEO.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2015</span>
+                  <h3 class="timeline-heading">OpenAI Co-Founded</h3>
+                  <p>
+                    Helped launch OpenAI as a research venture to ensure
+                    artificial intelligence benefits humanity.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item right">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2016</span>
+                  <h3 class="timeline-heading">Neuralink & The Boring Co.</h3>
+                  <p>
+                    Co-founded Neuralink for brain implants and The Boring
+                    Company for rapid transit tunneling.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2020</span>
+                  <h3 class="timeline-heading">
+                    Commercial Astronauts to Orbit
+                  </h3>
+                  <p>
+                    SpaceX Crew Dragon Demo-2 carried NASA astronauts to the
+                    ISS, returning orbital flight to US soil.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item right">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2022</span>
+                  <h3 class="timeline-heading">Acquisition of Twitter</h3>
+                  <p>
+                    Completed the $44B acquisition of Twitter with an emphasis
+                    on free speech and algorithmic transparency.
+                  </p>
+                </article>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <article class="glass-card timeline-card">
+                  <span class="timeline-year">2023</span>
+                  <h3 class="timeline-heading">Rebranded to X & Founded xAI</h3>
+                  <p>
+                    Rebranded the platform to X as an "everything app" and
+                    launched xAI to explore the universe's physics.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           4. ACHIEVEMENTS SECTION
+           ============================================================ -->
+        <section class="section achievements-section" id="achievements">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">PROVEN BREAKTHROUGHS</span>
+              <h2 class="section-title">Key Achievements</h2>
+            </div>
+
+            <div class="achievements-grid">
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">🚀</div>
+                <h3 class="achievement-title">Reusable Orbital Rockets</h3>
+                <p class="achievement-desc">
+                  Pioneered the vertical landing and reuse of Falcon 9
+                  first-stage boosters, reducing orbital payload expenses by
+                  over 70%.
+                </p>
+              </article>
+
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">⚡</div>
+                <h3 class="achievement-title">Global EV Mass Adoption</h3>
+                <p class="achievement-desc">
+                  Turned Tesla into the world's most valuable automotive
+                  manufacturer, with Model Y becoming the best-selling vehicle
+                  globally across all categories.
+                </p>
+              </article>
+
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">🛰️</div>
+                <h3 class="achievement-title">Starlink Global Constellation</h3>
+                <p class="achievement-desc">
+                  Built the world’s largest operational satellite constellation,
+                  bridging connectivity divides in remote regions and conflict
+                  zones.
+                </p>
+              </article>
+
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">👨‍🚀</div>
+                <h3 class="achievement-title">Commercial Human Spaceflight</h3>
+                <p class="achievement-desc">
+                  First commercial entity to transport humans to the
+                  International Space Station, safely flying both NASA
+                  astronauts and private civilians.
+                </p>
+              </article>
+
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">🧠</div>
+                <h3 class="achievement-title">Human Neural Interface</h3>
+                <p class="achievement-desc">
+                  Successfully implanted the Neuralink Telepathy BCI into human
+                  patients, allowing individuals with quadriplegia to control
+                  computers via direct thought.
+                </p>
+              </article>
+
+              <article class="glass-card achievement-card">
+                <div class="achievement-icon-wrap">🔋</div>
+                <h3 class="achievement-title">Megapack Grid Energy Storage</h3>
+                <p class="achievement-desc">
+                  Engineered utility-scale battery systems replacing fossil-fuel
+                  peaker plants and stabilizing municipal electrical grids
+                  worldwide.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           5. COMPANIES SECTION
+           ============================================================ -->
+        <section class="section companies-section" id="companies">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">VENTURES & ENTERPRISES</span>
+              <h2 class="section-title">Associated Companies</h2>
+            </div>
+
+            <div class="companies-grid">
+              <article class="glass-card company-card">
+                <div class="company-head">
+                  <span class="company-icon">🚀</span>
+                  <h3 class="company-name">SpaceX</h3>
+                </div>
+                <p class="company-role">
+                  Founder, CEO & Chief Engineer (2002–Present)
+                </p>
+                <p class="company-desc">
+                  Manufactures advanced rockets and spacecraft to dramatically
+                  lower launch costs and make humanity a multiplanetary
+                  civilization.
+                </p>
+                <a
+                  href="https://www.spacex.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="company-link"
+                >
+                  Visit SpaceX <span>&rarr;</span>
+                </a>
+              </article>
+
+              <article class="glass-card company-card">
+                <div class="company-head">
+                  <span class="company-icon">⚡</span>
+                  <h3 class="company-name">Tesla</h3>
+                </div>
+                <p class="company-role">
+                  CEO & Product Architect (Investor 2004; CEO 2008–Present)
+                </p>
+                <p class="company-desc">
+                  Accelerates the shift to sustainable energy through clean
+                  electric transportation, Megapack storage, and rooftop solar
+                  generation.
+                </p>
+                <a
+                  href="https://www.tesla.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="company-link"
+                >
+                  Visit Tesla <span>&rarr;</span>
+                </a>
+              </article>
+
+              <article class="glass-card company-card">
+                <div class="company-head">
+                  <span class="company-icon">🧠</span>
+                  <h3 class="company-name">Neuralink</h3>
+                </div>
+                <p class="company-role">Co-founder (2016–Present)</p>
+                <p class="company-desc">
+                  Designs high-bandwidth brain-computer interfaces to restore
+                  motor function and enable long-term symbiosis with artificial
+                  intelligence.
+                </p>
+                <a
+                  href="https://www.neuralink.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="company-link"
+                >
+                  Visit Neuralink <span>&rarr;</span>
+                </a>
+              </article>
+
+              <article class="glass-card company-card">
+                <div class="company-head">
+                  <span class="company-icon">🚇</span>
+                  <h3 class="company-name">The Boring Company</h3>
+                </div>
+                <p class="company-role">Founder (2016–Present)</p>
+                <p class="company-desc">
+                  Constructs rapid, scalable underground transit tunnels to
+                  eliminate congestion and revolutionize urban public transit.
+                </p>
+                <a
+                  href="https://www.boringcompany.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="company-link"
+                >
+                  Visit The Boring Co. <span>&rarr;</span>
+                </a>
+              </article>
+
+              <article class="glass-card company-card">
+                <div class="company-head">
+                  <span class="company-icon">🌐</span>
+                  <h3 class="company-name">X (formerly Twitter)</h3>
+                </div>
+                <p class="company-role">Owner & CTO (Acquired 2022)</p>
+                <p class="company-desc">
+                  Building an all-in-one platform integrating freedom of speech,
+                  video, digital commerce, creator monetization, and Grok AI.
+                </p>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="company-link"
+                >
+                  Visit X <span>&rarr;</span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           6. QUOTES SECTION
+           ============================================================ -->
+        <section class="section quotes-section" id="quotes">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">PHILOSOPHY & WORDS</span>
+              <h2 class="section-title">Documented Quotes</h2>
+            </div>
+
+            <div class="quotes-grid">
+              <figure class="glass-card quote-card">
+                <blockquote class="quote-text">
+                  “When something is important enough, you do it even if the
+                  odds are not in your favor.”
+                </blockquote>
+                <figcaption class="quote-author">&mdash; Elon Musk</figcaption>
+              </figure>
+
+              <figure class="glass-card quote-card">
+                <blockquote class="quote-text">
+                  “If you get up in the morning and think the future is going to
+                  be better, it is a bright day. Otherwise, it’s not.”
+                </blockquote>
+                <figcaption class="quote-author">&mdash; Elon Musk</figcaption>
+              </figure>
+
+              <figure class="glass-card quote-card">
+                <blockquote class="quote-text">
+                  “Persistence is very important. You should not give up unless
+                  you are forced to give up.”
+                </blockquote>
+                <figcaption class="quote-author">&mdash; Elon Musk</figcaption>
+              </figure>
+
+              <figure class="glass-card quote-card">
+                <blockquote class="quote-text">
+                  “I think it is possible for ordinary people to choose to be
+                  extraordinary.”
+                </blockquote>
+                <figcaption class="quote-author">&mdash; Elon Musk</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+           7. GALLERY SECTION
+           ============================================================ -->
+        <section class="section gallery-section" id="gallery">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-subtitle">VISUAL ARCHIVE</span>
+              <h2 class="section-title">Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/SpaceX_Falcon_Rocket_Launch.avif"
+                  alt="Rocket lift-off representing SpaceX orbital launches"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  SpaceX Falcon Rocket Launch
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/Tesla_Electric_Mobility.avif"
+                  alt="Electric vehicle charging representing Tesla innovation"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  Tesla Electric Mobility
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/Earth from space representing Starlink constellation.avif"
+                  alt="Earth from space representing Starlink constellation"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  Starlink Low Earth Orbit Network
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/Futuristic cybernetic interface symbolizing Neuralink.avif"
+                  alt="Futuristic cybernetic interface symbolizing Neuralink"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  Neuralink Brain-Machine Interface
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/Rocket engine plume representing Raptor propulsion.avif"
+                  alt="Rocket engine plume representing Raptor propulsion"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  Starship Raptor Propulsion
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-card">
+                <img
+                  src="/assets/images/Mars planetary surface representing multiplanetary vision.avif"
+                  alt="Mars planetary surface representing multiplanetary vision"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <figcaption class="gallery-caption">
+                  The Mars Colonization Vision
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ============================================================
+         8. FOOTER SECTION
+         ============================================================ -->
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <div class="footer-top">
+            <h2 class="footer-title">Tribute to Elon Musk</h2>
+            <p class="footer-tagline">
+              Celebrating the engineering milestones, audacity, and vision of
+              modern history's most impactful technologist.
+            </p>
+          </div>
+
+          <div class="footer-links-group">
+            <span class="footer-group-heading">Official Ventures:</span>
+            <ul class="footer-links-list">
+              <li>
+                <a
+                  href="https://www.spacex.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >SpaceX</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.tesla.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tesla</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >X</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.neuralink.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Neuralink</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.boringcompany.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Boring Company</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="footer-credit">
+              Tribute to Elon Musk — Celebrating innovation and bold vision
+            </p>
+            <p class="footer-disclaimer">
+              Official ventures referenced: Tesla, SpaceX, Neuralink, The Boring
+              Company, and X (Twitter). All information curated from publicly
+              verified records.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
